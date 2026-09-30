@@ -6,26 +6,26 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
   server: 188.114.97.6
-  port: 8080
+  port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+    path: /assignment
 - name: 🌐 其他地区 (Other) 02 - xiaohe
   server: 188.114.97.6
-  port: 8080
+  port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 571x2.r4bn.bim.hh.vavava.kdns.fr
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select

@@ -4,30 +4,43 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
       "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
+        "path": "/assignment",
         "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+          "Host": "www.pleadcourt.org"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
       "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
+        "path": "/assignment",
         "headers": {
-          "Host": "571x2.r4bn.bim.hh.vavava.kdns.fr"
+          "Host": "www.pleadcourt.org"
         }
       }
     },
